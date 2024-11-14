@@ -4,11 +4,11 @@ from pydantic_settings import BaseSettings, SettingsConfigDict
 class Settings(BaseSettings):
     model_config = SettingsConfigDict(env_file=".env", env_ignore_empty=True)
 
-    API_ID: int
-    API_HASH: str
+    API_ID: str 25919445
+    API_HASH: str ee53bc74083bffda82227a5f88082b84
 
 
-    REF_LINK: str = ""
+    REF_LINK: str = "https://t.me/claytoncoinbot/game?startapp=952149020"
 
     AUTO_TASK: bool = True
     AUTO_CONNECT_WALLET: bool = True
